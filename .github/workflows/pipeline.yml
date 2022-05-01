@@ -34,5 +34,5 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           healthcheck: "https://pokemyride.herokuapp.com/health"
-          checkstring: "ok"
+          checkstring: "o"
           delay: 5
