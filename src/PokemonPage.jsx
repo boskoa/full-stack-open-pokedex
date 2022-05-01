@@ -29,7 +29,6 @@ const PokemonPage = ({ previous, next }) => {
   console.log('hiddenAbility=', hiddenAbility);
   return (
     <>
-      <p>OJSASA</p>
       <div className="links">
         {previous && <Link to={`/pokemon/${previous.name}`}>Previous</Link>}
         <Link to="/">Home</Link>
