@@ -42,14 +42,14 @@ jobs:
           delay: 5
           rollbackonhealthcheckfailed: true
       - name: Successfull deployment
-        uses: rjstone/discord-webhook-notify@v1
+        uses: rjstone/discord-webhook-notify@89b0bf43c2c8514f70d0dcba4a706b904e8a3112
         if: ${{ github.event_name == 'push' && !contains(join(toJson(github.event.commits.*.message), ' '), '#skip') && success() }}
         with:
             severity: info
             details: A new version of Pokedex deployed.
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Build failed
-        uses: rjstone/discord-webhook-notify@v1
+        uses: rjstone/discord-webhook-notify@89b0bf43c2c8514f70d0dcba4a706b904e8a3112
         if: ${{ github.event_name == 'push' && !contains(join(toJson(github.event.commits.*.message), ' '), '#skip') && failure() }}
         with:
             severity: error
