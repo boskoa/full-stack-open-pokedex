@@ -1,4 +1,4 @@
-## Full Stack open CI/CD
+## Full Stack Open CI/CD
 
 Repository for part 11
 ----
